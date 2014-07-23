@@ -1,0 +1,27 @@
+{
+  "name": "lazyrequire",
+  "description": "lazily require modules in node.js",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "module-utils/lazyrequire",
+  "devDependencies": {
+    "mocha": "1",
+    "istanbul": "0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+  },
+  "keywords": [
+    "lazy",
+    "require"
+  ],
+  "files": ["index.js"]
+}
