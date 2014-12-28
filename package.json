@@ -28,6 +28,7 @@
     "index.js"
   ],
   "dependencies": {
+    "callsite": "1",
     "chalk": "0"
   }
 }

@@ -1,5 +1,6 @@
 
 var chalk = lazy(require)('chalk')
+var callsite = lazy(require)('callsite')
 
 module.exports = lazy
 
@@ -19,8 +20,8 @@ function lazy(require) {
         console.error(chalk().yellow('Please run `')
           + chalk().cyan('npm i --save ' + name)
           + chalk().yellow('` in your console.'))
-        // TODO: make this better, like nodejs-depd
-        console.trace()
+        var site = callsite()()[1]
+        console.error(chalk().green(site.getFileName() + ':' + site.getLineNumber()) + ' ' + (site.getFunctionName() || 'anonymous'))
         process.exit(1)
       }
     }
