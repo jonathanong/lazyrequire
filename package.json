@@ -15,13 +15,19 @@
     "istanbul": "0"
   },
   "scripts": {
-    "test": "mocha --reporter spec",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+    "fail": "node test/fail.js",
+    "test": "mocha test/test.js",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/test.js",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot test/test.js"
   },
   "keywords": [
     "lazy",
     "require"
   ],
-  "files": ["index.js"]
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.1"
+  }
 }
