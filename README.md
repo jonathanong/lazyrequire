@@ -20,9 +20,9 @@ setImmediate(function () {
 
 [npm-image]: https://img.shields.io/npm/v/lazyrequire.svg?style=flat
 [npm-url]: https://npmjs.org/package/lazyrequire
-[travis-image]: https://img.shields.io/travis/module-utils/lazyrequire.svg?style=flat
-[travis-url]: https://travis-ci.org/module-utils/lazyrequire
-[coveralls-image]: https://img.shields.io/coveralls/module-utils/lazyrequire.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/module-utils/lazyrequire?branch=master
+[travis-image]: https://img.shields.io/travis/jonathanong/lazyrequire.svg?style=flat
+[travis-url]: https://travis-ci.org/jonathanong/lazyrequire
+[coveralls-image]: https://img.shields.io/coveralls/jonathanong/lazyrequire.svg?style=flat
+[coveralls-url]: https://coveralls.io/r/jonathanong/lazyrequire?branch=master
 [gittip-image]: https://img.shields.io/gittip/jonathanong.svg?style=flat
 [gittip-url]: https://www.gittip.com/jonathanong/
