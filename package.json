@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": "jonathanong/lazyrequire",
   "devDependencies": {
-    "mocha": "1",
+    "mocha": "2",
     "istanbul": "0"
   },
   "scripts": {
@@ -29,6 +29,6 @@
   ],
   "dependencies": {
     "callsite": "1",
-    "chalk": "0"
+    "chalk": "1"
   }
 }
