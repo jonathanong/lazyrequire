@@ -1,7 +1,7 @@
 {
   "name": "lazyrequire",
   "description": "lazily require modules in node.js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
