@@ -7,7 +7,8 @@
   "repository": "jonathanong/lazyrequire",
   "dependencies": {
     "callsite": "1",
-    "chalk": "1"
+    "chalk": "1",
+    "fn-getter": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "4",

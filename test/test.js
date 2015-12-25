@@ -27,3 +27,7 @@ it('should fail gracefully', done => {
     done()
   })
 })
+
+it('should throw if you do not pass `require` into `lazyrequire(require)`', () => {
+  assert.throws(() => require('..')())
+})
