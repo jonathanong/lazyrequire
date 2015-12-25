@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard"
+  ],
+  "env": {
+
+  },
+  "rules": {
+    "no-return-assign": 0,
+    "operator-linebreak": 0
+  }
+}

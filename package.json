@@ -2,33 +2,39 @@
   "name": "lazyrequire",
   "description": "lazily require modules in node.js",
   "version": "1.2.1",
-  "author": {
-    "name": "Jonathan Ong",
-    "email": "me@jongleberry.com",
-    "url": "http://jongleberry.com",
-    "twitter": "https://twitter.com/jongleberry"
-  },
+  "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
   "license": "MIT",
   "repository": "jonathanong/lazyrequire",
+  "dependencies": {
+    "callsite": "1",
+    "chalk": "1"
+  },
   "devDependencies": {
-    "mocha": "2",
-    "istanbul": "0"
+    "babel-eslint": "4",
+    "codecov": "1",
+    "eslint": "1",
+    "eslint-config-standard": "4",
+    "eslint-plugin-standard": "1",
+    "ghooks": "1",
+    "nyc": "5",
+    "mocha": "2"
   },
   "scripts": {
-    "fail": "node test/fail.js",
+    "lint": "eslint --cache lib test",
     "test": "mocha test/test.js",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/test.js",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot test/test.js"
+    "test-cov": "nyc node_modules/mocha/bin/_mocha test/test.js && nyc report --reporter=lcov"
+  },
+  "config": {
+    "ghooks": {
+      "pre-push": "npm run lint"
+    }
   },
   "keywords": [
     "lazy",
     "require"
   ],
   "files": [
-    "index.js"
+    "lib"
   ],
-  "dependencies": {
-    "callsite": "1",
-    "chalk": "1"
-  }
+  "main": "lib"
 }
