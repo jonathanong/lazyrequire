@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-env mocha */
+
 const child_process = require('child_process')
 const assert = require('assert')
 
@@ -21,8 +23,8 @@ it('should lazy("..")', () => {
   assert.equal(mod(), require('..'))
 })
 
-it('should fail gracefully', done => {
-  child_process.fork('./test/fail.js').on('close', code => {
+it('should fail gracefully', (done) => {
+  child_process.fork('./test/fail.js').on('close', (code) => {
     assert.equal(code, 1)
     done()
   })
