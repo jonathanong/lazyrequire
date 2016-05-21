@@ -2,7 +2,7 @@
 
 /* eslint-env mocha */
 
-const child_process = require('child_process')
+const childProcess = require('child_process')
 const assert = require('assert')
 
 const lazy = require('..')(require)
@@ -24,7 +24,7 @@ it('should lazy("..")', () => {
 })
 
 it('should fail gracefully', (done) => {
-  child_process.fork('./test/fail.js').on('close', (code) => {
+  childProcess.fork('./test/fail.js').on('close', (code) => {
     assert.equal(code, 1)
     done()
   })

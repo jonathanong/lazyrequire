@@ -14,7 +14,7 @@
     "codecov": "^1.0.1",
     "mocha": "^2.4.5",
     "nyc": "^6.0.0",
-    "standard": "^6.0.8"
+    "standard": "^7.0.8"
   },
   "scripts": {
     "lint": "standard lib/**/*.js test/**/*.js",
